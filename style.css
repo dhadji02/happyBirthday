@@ -1,0 +1,134 @@
+.btn-primary {
+    background-color: mediumslateblue;
+    border: 1px solid mediumslateblue;
+    align-self: center;
+}
+
+.btn:hover, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: mediumpurple;
+    border: 1px solid mediumpurple;
+}
+
+.card-group {
+    margin-bottom: 24px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+body {
+    background-color: #e4defc;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: white !important;
+}
+
+.nav-link.active, .nav-link {
+    color: #643b9f !important;
+}
+
+.btn.disabled {
+    background-color: gray;
+    color: white;
+    border-color: gray;;
+}
+
+.gift-container {
+  position: relative;
+  text-align: center;
+  margin-top: 60px;
+  cursor: pointer;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+}
+
+.gift-box {
+  width: 200px;
+  transition: transform 0.6s ease;
+}
+
+.hidden-content {
+  opacity: 0;
+  transition: all 0.6s ease;
+  margin-top: 20px;
+  min-height: 150px;
+}
+
+.gift-container.open .hidden-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.confetti {
+  font-size: 40px;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-15px); }
+}
+
+.wish {
+  display: none;
+  margin: auto;
+}
+
+.mediaContainer{ margin: 12px 0px;}
+
+.bottom-12 {margin-bottom: 12px;}
+
+#balloonContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.heart {
+  position: absolute;
+  bottom: -100px;
+  width: 60px;
+  height: 54px;
+  transform: rotate(-45deg);
+  animation: floatUp 6s linear forwards;
+  opacity: 0.9;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 54px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.heart::before {
+  top: -30px;
+  left: 0;
+}
+
+.heart::after {
+  left: 30px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(-45deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(-45deg) scale(1.3);
+    opacity: 0;
+  }
+}
+ 
