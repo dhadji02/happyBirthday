@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img.loading = "lazy";
 
       const audio = document.createElement("audio");
-      audio.src = btn.dataset.audio || "./song.mp3";
+      audio.src = btn.dataset.audio || "song.mp3";
       audio.preload = "auto";
       audio.style.display = "none";
 
@@ -101,4 +101,5 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => container.remove(), 9000);
   }
 });
+
 
