@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.classList.add("disabled");
 
       const img = document.createElement("img");
-      img.src = btn.dataset.img || "/images/candles.gif";
+      img.src = btn.dataset.img || "images/candles.gif";
       img.alt = btn.dataset.imgAlt || "surprise image";
       img.style.width = "50%";
       img.loading = "lazy";
 
       const audio = document.createElement("audio");
-      audio.src = btn.dataset.audio || "/song.mp3";
+      audio.src = btn.dataset.audio || "./song.mp3";
       audio.preload = "auto";
       audio.style.display = "none";
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (gift) {
     const surpriseBox = document.getElementById("surpriseBox");
     let surprises = [];
-    const imageFolder = "/images/";
+    const imageFolder = "images/";
     const imageNames = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"];
 
     for (let i = 0; i < imageNames.length; i++) {
@@ -101,3 +101,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => container.remove(), 9000);
   }
 });
+
