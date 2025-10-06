@@ -45,7 +45,7 @@ body {
 }
 
 .gift-box {
-  width: 200px;
+  width: 400px;
   transition: transform 0.6s ease;
 }
 
@@ -132,3 +132,4 @@ body {
   }
 }
  
+
