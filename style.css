@@ -38,7 +38,6 @@ body {
 .gift-container {
   position: relative;
   text-align: center;
-  margin-top: 60px;
   cursor: pointer;
   justify-content: center; /* centers horizontally */
   align-items: center;     /* centers vertically */
@@ -132,4 +131,5 @@ body {
   }
 }
  
+
 
