@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageNames = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"];
 
     for (let i = 0; i < imageNames.length; i++) {
-        surprises.push(`<img src="${imageFolder}${imageNames[i]}" style="width:600px; margin-bottom: 24px;">`);
+        surprises.push(`<img src="${imageFolder}${imageNames[i]}" style="width:50%; margin-bottom: 24px;">`);
     }
 
     let lastIndex = -1;
@@ -101,5 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => container.remove(), 9000);
   }
 });
+
 
 
